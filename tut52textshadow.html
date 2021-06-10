@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            padding:23px 12px;
+            margin:23px 3px;
+            /*border:2px solid red;*/
+            background-color: coral;
+            box-shadow:3px 5px green;/*x y color* x y ka value negative put karne par upar shadow aa jayega*/
+            box-shadow:3px 5px 10px green;/*x y blur radius color*/
+            box-shadow:3px 5px 10px 20px  green;/*offset-x offset-y blur-radius spread-radius */
+
+            box-shadow: 3px 5px green, 4px 6px red;/*2 different types ke color ek saath dene ke liye*/
+        }
+        .card h2{
+            text-shadow: 3px 4px red;/*thi sis used to give text shadow*/
+            text-shadow: 3px 4px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is Card1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi enim dolor dolorum voluptatum tempore porro deleniti a quisquam? Rerum ut, placeat recusandae cumque repellat hic tempore nesciunt facilis libero blanditiis repudiandae, corporis a!</p>
+        </div>
+        <div class="card" id="card-2">
+           <h2>This is Card2</h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum modi sit labore vero corporis esse accusamus natus quasi. Itaque sint placeat totam porro excepturi sed non deserunt. Porro in facilis esse corporis impedit.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam placeat odio aliquam veniam eveniet ullam quos eaque accusantium dolorum voluptas ratione provident quas praesentium repudiandae impedit fugit maiores quod harum quae, iure perspiciatis blanditiis.</p>
+        </div>
+    </div>
+</body>
+</html>

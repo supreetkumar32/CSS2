@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+          height:544px;
+          width:200%;
+          border:2px solid black;
+          display:flex;/*initialize a container of a flex box*/
+          
+      }
+      .item{
+          width:200px;
+          height: 200px;
+          background-color: rgb(154, 114, 192);
+          border:2px solid black;
+          margin:4px;
+          padding: 4px;
+          
+          
+      }
+      #item-1{
+          /*flex properties for a flex item*/
+          flex-grow: 2;/*mobile par box 1 ka size big hoga*/
+      }
+      #item-2{
+         order:2;
+         flex-grow: 3;/*mobile par box 2 ka size big hoga*/
+         flex-shrink: 2;/* mobile par box 2 ka size chota hoga*/
+         flex-basis:260px;
+         /*when flex-direction is set to row flex-basis:will control width*/
+          /*when flex-direction is set to column flex-basis:will control height*/
+      }
+      #item-3{
+          align-self:flex-start;/*ek particular box upar ho jayega*/
+
+          align-self:flex-end;/*ek particular box niche ho jayega*/
+          align-self:center;/*ek particular box center mey ho jayega*/
+      }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial.</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        
+    </div>
+</body>
+</html>

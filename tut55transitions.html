@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+#box{
+    display:flex;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    justify-content: center;
+    align-items:center;
+    transition-property: background-color;
+    /*transition-duration: 10s;/*final color tak paunchane ke liye jis jis color se gujarna padta hai wo ye show karega*/
+    transition-timing-function: ease-in;/*suru mey slow ho jayega phir fast ho jayega as we have seen in the animations*/
+    transition-delay: 1s;
+    /*ek saath sab mey transition dene ke liye*/
+    transition: all 1s ease-in-out .3s
+}
+#box:hover{
+    background-color: greenyellow;
+    height:400px;
+    width:400px;
+    border-radius: 45px;
+    font-size: 25px;
+}
+</style>
+<body>
+    <h3>This is Css transitions.</h3>
+    <div class="container">
+        <div id="box">
+            This is box.
+        </div>
+    </div>
+</body>
+</html>

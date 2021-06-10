@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        .box{
+            width:170px;
+            height:170px;
+            border:2px solid black;
+        }
+        #box1{
+            background-color: green;
+        }
+        #box2{
+            visibility:hidden;/*visibility hidden karne se wo element visible nahi hoga aur uske jagah pura space khali rah jayega */
+            background-color: red;
+        }
+        #box3{
+            display:none;/*display nane karne se wo element to gayab ho hi jata hai aur uske jagah par dusara element jo uske niche rahta hai wo upar wale element ka space bhi le leta hai*/
+            background-color: blue ;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

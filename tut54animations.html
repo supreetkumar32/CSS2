@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .container{
+        display:flex;
+        background-color: greenyellow;
+    }
+    .box{
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;/*ye nahi bhi likhenge to chalega*/
+        animation-name: supreetkumar;
+        animation-duration: 8s;
+        animation-iteration-count: 3;/*infinite likhane se hamesa chalta rahega*/
+        animation-timing-function:ease-in ;/*pehle dhire aayega phir tej ho jayega*/
+        animation-timing-function:ease-out;/*pehle speed hoga phir dhire ho jayega*/
+        animation-timing-function:ease-in-out;/*pehle dhire hoga phir speed hoga phir dhire ho jayega*/
+        animation-delay:3s ;/*ye karne se 3sec ke baad animation suru hoga*/
+        animation-direction: reverse;/*ye karne s eanimation ulta chalega*/
+        /*animation:animation-name animation-duration animatiom-timing-function animation-delay animation-iteration-count animation-fill-mode*
+        animation:supreetkumar 5s ease-in 1s 12 backwards
+        (isse direct hi sab value put kar sakte hai/*/
+    }
+    @keyframes supreetkumar{
+        0%{
+                 top:0px;
+                 left:0px;
+        }
+        25%{
+                top:250px;
+                 left:0px;
+        }
+        75%{
+                 top:250px;
+                 left:250px;        
+        }
+        100%{
+                    top:0px;
+                    left:250px;
+        }
+    }
+    @keyframes supreet{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 400px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box.
+        </div>
+    </div>
+</body>
+</html>

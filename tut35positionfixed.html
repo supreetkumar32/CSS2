@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--types of css position:static(by default),absolute,relative,fixed and sticky-->
+    <style>
+        .container{
+            border: 2px solid black;
+            height:3444px;
+        }
+        .box{
+            display: inline-block;/*ek hi lin emey lene ke liye 4 box ko*/
+            border:2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /*fixed  position means jisme fixed position lagaye hai wo scroll karne k
+            par bhi fixed hi rahe hile dule nahi */
+            position:fixed;
+            right: 4px;
+            bottom:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>  
+</div>                   <!--div.box#box -->
+</body>
+</html>

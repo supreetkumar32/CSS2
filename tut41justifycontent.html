@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+          height:544px;
+          width:200%;
+          border:2px solid black;
+          display:flex;/*initialize a container of a flex box*/
+          /*properties of flex container*/
+          flex-direction: row;/*by default yahi hota hai*/
+          justify-content: center;/*isme boxes center mey aa jayenge*/
+          justify-content: space-between;/*sab boxes ke between mey same space hoga*/
+          justify-content: space-evenly;/*sab boxes ke between mey same space hoga aur container se bhi*/
+          justify-content: space-around;/*sab boxes ke around mey same space hoga */
+
+          align-items: center;/*isse element container ke ekdum center mey ho jayega*/
+          align-items: flex-start;/*by default hota hai*/
+          align-items: flex-end;/*box mey sab se niche aa jayega*/
+      }
+      .item{
+          width:200px;
+          height: 200px;
+          background-color: rgb(154, 114, 192);
+          border:2px solid black;
+          margin:4px;
+          padding: 4px;
+          
+          
+      }
+    </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial.</h1>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            font-size: 75px;
+            text-align: center;
+            background-color: yellow;
+            color:black;
+            display:none;/*display none karne se kuch dikhai nahi dega output mey*/
+        }
+        @media(max-width:300px){
+            #box-1{
+                display:block;
+                /*jaise ye 500px par jayega to box 1 ka display hone lagega*/
+            }
+        }
+        @media(max-width:500px)and (min-width:300px){
+            #box-2{
+                display:block;
+                background-color: red;/*jaise ye 500px par jayega to box 1 ka display hone lagega*/
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">i am an i phone</div>
+    <div class="box" id="box-2">i am a tablet</div>
+    <div class="box" id="box-3">i am a computer</div>
+    <div class="box" id="box-4">i am a widescreen computer</div>
+</body>
+</html>
